@@ -69,13 +69,12 @@ function SingleProduct() {
         <div className="card-body">
           <h5 className="card-title">{product.title}</h5>
           <p className="card-text">{product.description}</p>
-          <p className="card-text">價格：{product.price}</p>
+          <p className="card-text">原價：{product.origin_price}</p>
+          <p className="card-text">售價：{product.price}</p>
+
           <p className="card-text">
-            <small className="text-body-secondary">{product.unit}</small>
+            <small className="text-body-secondary">單位：{product.unit}</small>
           </p>
-          <button type="button" className="btn btn-primary">
-            查看更多
-          </button>
         </div>
       </div>
     </div>
